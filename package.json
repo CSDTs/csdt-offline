@@ -1,7 +1,7 @@
 {
 	"name": "csdt-offline",
 	"productName": "csdt-offline",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "My Electron application description",
 	"main": "src/index.js",
 	"scripts": {
@@ -31,6 +31,29 @@
 	},
 	"config": {
 		"forge": {
+			"packagerConfig": {},
+			"makers": [
+				{
+					"name": "@electron-forge/maker-squirrel",
+					"config": {
+						"name": "electron_publish_example"
+					}
+				},
+				{
+					"name": "@electron-forge/maker-zip",
+					"platforms": [
+						"darwin"
+					]
+				},
+				{
+					"name": "@electron-forge/maker-deb",
+					"config": {}
+				},
+				{
+					"name": "@electron-forge/maker-rpm",
+					"config": {}
+				}
+			],
 			"publishers": [
 				{
 					"name": "@electron-forge/publisher-github",
