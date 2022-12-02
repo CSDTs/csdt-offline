@@ -59,7 +59,7 @@
 					"name": "@electron-forge/publisher-github",
 					"config": {
 						"repository": {
-							"owner": "ahunnii",
+							"owner": "andrewhunn",
 							"name": "csdt-offline"
 						},
 						"prerelease": true
