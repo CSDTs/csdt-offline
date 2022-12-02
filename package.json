@@ -61,7 +61,8 @@
 						"repository": {
 							"owner": "ahunnii",
 							"name": "csdt-offline"
-						}
+						},
+            "draft": true
 					}
 				}
 			]
